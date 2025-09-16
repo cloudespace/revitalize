@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script>
+        const isDesktop = !/Android|iPhone|iPad|iPod|Windows Phone|webOS|BlackBerry/i.test(navigator.userAgent);
+        if (isDesktop) {
+            window.location.replace("https://youtu.be/Yy4XRc4vuAY?si=um49dBrEIFLA6ctr");
+        }
+    </script>
+    <!-- Resto do head -->
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>REVITALIZE 100%</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #000;
+        }
+
+        .top-bar {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 15px 0;
+        }
+
+        .countdown div {
+            background: #fff;
+            color: red;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .offer-section {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .offer-section h1 {
+            color: red;
+            font-size: 34px;
+        }
+
+        .offer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .offer-section ul li::before {
+            content: "🎁 ";
+        }
+
+        .price {
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .price s {
+            color: gray;
+        }
+
+        .final-price {
+            font-size: 32px;
+            font-weight: bold;
+            color: limegreen;
+        }
+
+        .btn-comprar {
+            background: green;
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-comprar:hover {
+            background: darkred;
+        }
+
+        .btn-comprar a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .ebook-image {
+            margin-top: 25px;
+            border-radius: 20px;
+        }
+
+        .ebook-image img {
+            width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-bar">
+        REVITALIZE 100% ESSA OFERTA EXPIRA EM:
+        <div class="countdown">
+            <div id="minutos">15</div>
+            <div id="segundos">00</div>
+        </div>
+    </div>
+
+    <div class="offer-section">
+        <!--video vsl-->
+        <main>
+            <script src="https://fast.wistia.com/player.js" async></script>
+            <script src="https://fast.wistia.com/embed/rcvtvpuwxi.js" async type="module"></script>
+            <style>
+                wistia-player[media-id='rcvtvpuwxi']:not(:defined) {
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/rcvtvpuwxi/swatch');
+                    display: block;
+                    filter: blur(5px);
+                    padding-top: 56.25%;
+                }
+            </style> <wistia-player media-id="rcvtvpuwxi" aspect="1.7777777777777777"></wistia-player>
+        </main>
+        <br>
+
+        <button class="btn-comprar">
+            <a href="vermelho/index.html"> QUERO MEU ACESSO AGORA </a>
+        </button>
+
+        <div class="ebook-image">
+            <img src="images/revitalize02.png" alt="Capa do Ebook">
+        </div>
+
+
+
+    </div>
+
+    <script>
+        // Contagem regressiva de 10 minutos
+        let tempo = 15 * 60; // 10 minutos em segundos
+        const minutosEl = document.getElementById("minutos");
+        const segundosEl = document.getElementById("segundos");
+
+        function atualizarContador() {
+            const minutos = Math.floor(tempo / 60);
+            let segundos = tempo % 60;
+            segundos = segundos < 10 ? "0" + segundos : segundos;
+
+            minutosEl.textContent = minutos < 10 ? "0" + minutos : minutos;
+            segundosEl.textContent = segundos;
+
+            if (tempo > 0) {
+                tempo--;
+            }
+        }
+        setInterval(atualizarContador, 1000);
+    </script>
+
+</body>
+<footer>
+    <p> &COPY;2025 REVITALIZE 100% </p>
+    <P>TODOS OS DIREITOS RESERVADOS</P>
+</footer>
+
+</html>
